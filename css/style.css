@@ -20,15 +20,15 @@ a {
 }
 
 p {
-    font-size: 0.9em;
-    line-height: 1.5em;
+    font-size: 0.8em;
+    line-height: 1.8em;
     font-weight: 300;
 }
 
 h1 {
     font-style: normal;
     font-weight: 600;
-    font-size: 2.2em;
+    font-size: 2em;
 }
 
 h2 {
@@ -63,7 +63,7 @@ section {
     cursor: pointer;
     color: #ffffff;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 900;
 }
 
@@ -135,7 +135,7 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .hero{
-    height: 85vh;
+    height: 80vh;
     display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -151,7 +151,7 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .hero-text p {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .hero-links{
@@ -161,7 +161,6 @@ nav :checked ~ .icon-burger .line2 {
 .hero-links p {
     font-size: 0.8em;
     color: #DBDBDB;
-    padding-top: 10px;
 }
 
 .hero-links a {
@@ -290,12 +289,12 @@ nav :checked ~ .icon-burger .line2 {
 .job::before {
     content: attr(employer);
     position: absolute;
-    left: 2.2em;
+    left: 2.8em;
     top: 0em;
     display: block;
-    font-size: 0.9em;
+    font-size: 0.7em;
     color: #00EAEE;
-    margin-top: -0.25em;
+    padding-top: 0.2em;
 }
 
 .job::after {
@@ -314,7 +313,7 @@ nav :checked ~ .icon-burger .line2 {
 
 
 .employer p {
-    font-size: 0.9em;
+    font-size: 0.7em;
     color: #00EAEE;
 }
 
@@ -329,7 +328,9 @@ nav :checked ~ .icon-burger .line2 {
 
 .job-desc p {
     font-size: 0.7em;
-    line-height: 1.7;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #E5E5E5;
 }
 
 .time {
@@ -337,7 +338,7 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .time p {
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-style: italic;
     color: #E5E5E5;
 }
@@ -360,7 +361,7 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .social-icon {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .twitter img {
@@ -390,17 +391,16 @@ footer {
     padding: 35px 0 35px 0;
 }
 
-.site-links p, .site-links a {
+.site-links p {
     font-size: 1em;
 }
 
 .footer-info {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .footer-info p {
-    font-size: 0.8em;
-    color: #DBDBDB;
+    font-size: 0.7em;
 }
 
 .footer-pipes {
