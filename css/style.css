@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    font-family: 'Poppins';
+    color: #ffffff;
+    background-color: #262F42;
+}
+
+a {
+    color: #fff;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+p {
+    font-size: 0.8em;
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#nav-toggle {
+	display: none;
+}
+
+section {
+    padding-bottom: 140px;
+}
+
+.body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    z-index: 10;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+.icon-burger{
+    z-index: 10;
+}
+
+.icon-burger .line1 {
+	width: 30px;
+	height: 4px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 5px;
+	transition: all .3s ease-in-out;
+}
+
+.icon-burger .line2 {
+	width: 20px;
+	height: 4px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 5px;
+    float: right;
+    margin-top: 1px;
+	transition: all .3s ease-in-out;
+	display: block;
+}
+
+.links {
+	display: flex;
+    flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	position: fixed;
+	z-index: 9;
+	left: 0;
+	right: 0;
+	top: 0px;
+	bottom: 100%;
+	background-color: #3257a7;
+	overflow: hidden;
+	transition: all .5s ease-in-out;
+}
+
+.links li {
+	list-style: none;
+}
+
+.links a {
+	display: block;
+	padding: 1em;
+	font-size: 2em;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav :checked ~ .links {
+	bottom: 0;
+}
+nav :checked ~ .icon-burger .line1 {
+	transform: translateY(10px) rotate(225deg);
+	
+}
+nav :checked ~ .icon-burger .line2 {
+	transform: translateY(-10px) rotate(-225deg);
+	width:30px;
+	margin-top: 10px;
+}
+
+.hero{
+    height: 90vh;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    padding-bottom: 0px;
+}
+
+.hello{
+    padding-right: 0.2em;
+}
+
+.hero-text {
+    padding: 1rem 0 0.5rem 0;
+}
+
+.hero-text p {
+    font-size: 0.9em;
+}
+
+.hero-links{
+    margin-bottom: 10vh;
+}
+
+.hero-links p {
+    font-size: 0.8em;
+    color: #DBDBDB;
+}
+
+.hero-links a {
+    text-decoration: none;
+	font-size: 1em;
+    color: #00EAEE;
+}
+
+.work-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.title-num {
+    color: #00EAEE;
+    padding-right: 4px;
+}
+
+.button {
+    font-size: 0.7em;
+    border: 1px solid #00EAEE;
+    border-radius: 4px;
+    padding: 2px 10px 2px 10px;
+}
+
+.button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+}
+
+.card {
+    border-radius: 15px 15px 15px 15px;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0;
+    padding: 20px 0 0 20px;
+}
+
+.card-subheading p {
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.card-title p {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.portfolio {
+    background-color: #8e3dc4;
+}
+
+.global-warming {
+    background-color: #0C2038;
+}
+
+.nintendo {
+    background-color: #3DA2FF;
+}
+
+.school-workforce {
+    background-color: #1DA7B1;
+}
+
+.section-heading {
+    padding-bottom: 20px;
+}
+
+.tools-grid {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    grid-gap: 30px;
+}
+
+.tool-icon {
+    padding-top: 10px;
+}
+
+.icon-image {
+    padding-bottom: 10px;
+}
+
+.icon-image img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tools p {
+    font-size: 0.7em;
+    text-align: center;
+    font-weight: 400;
+}
+
+.experience-heading {
+    padding-bottom: 35px;
+}
+
+.job {
+    margin-left: 1em;
+    padding: 1em 2em 2em;
+	position: relative;
+	color: rgba(black, .7);
+	border-left: 1px solid #6E7480;
+}
+
+.job::before {
+    content: attr(employer);
+    position: absolute;
+    left: 2.8em;
+    top: 0em;
+    display: block;
+    font-size: 0.7em;
+    color: #00EAEE;
+    padding-top: 0.2em;
+}
+
+.job::after {
+    width: 4px;
+    height: 4px;
+    display: block;
+    top: 0em;
+    position: absolute;
+    left: -8px;
+    border-radius: 10px;
+    content: '';
+    border: 5px solid #6E7480;
+    background: white;
+    color: blue;
+}
+
+
+.employer p {
+    font-size: 0.7em;
+    color: #00EAEE;
+}
+
+.job-title p {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.job-desc {
+    padding-top: 1px;
+}
+
+.job-desc p {
+    font-size: 0.6em;
+}
+
+.time {
+    padding-top: 10px;
+}
+
+.time p {
+    font-size: 0.6em;
+    font-style: italic;
+    color: #E5E5E5;
+}
+
+.last-job {
+    border-left: 1px solid #262F42;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icon {
+    padding-left: 10px;
+}
+
+.twitter img {
+    width: 16px;
+    height: 13px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkedin img {
+    width: 13px;
+    height: 13px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hello{
+    display: inline-block;
+    margin-top: 25px;
+}
+
+footer {
+    background-color: #21293A;
+    text-align: center;
+    padding: 35px 0 35px 0;
+}
+
+.site-links p {
+    font-size: 1em;
+}
+
+.footer-info {
+    padding-top: 5px;
+}
+
+.footer-info p {
+    font-size: 0.7em;
+}
+
+.footer-pipes {
+    color: #00EAEE;
+    white-space: pre-wrap;
+}
