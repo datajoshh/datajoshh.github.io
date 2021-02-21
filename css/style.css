@@ -21,7 +21,7 @@ a {
 
 p {
     font-size: 0.9em;
-    line-height: 1.8em;
+    line-height: 1.5em;
     font-weight: 300;
 }
 
@@ -135,7 +135,7 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .hero{
-    height: 80vh;
+    height: 85vh;
     display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -159,8 +159,9 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .hero-links p {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #DBDBDB;
+    padding-top: 10px;
 }
 
 .hero-links a {
@@ -389,16 +390,17 @@ footer {
     padding: 35px 0 35px 0;
 }
 
-.site-links p {
+.site-links p, .site-links a {
     font-size: 1em;
 }
 
 .footer-info {
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .footer-info p {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    color: #DBDBDB;
 }
 
 .footer-pipes {
