@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Josh Hughes</title>
 </head>
 <body>
 
@@ -13,9 +13,10 @@
         <input id="nav-toggle" type="checkbox">
         <a href="index.html" class="logo">jh<span style="color: #00EAEE">.</span></a>
         <ul class="links">
-            <li><a href="#work">My work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#work"><span class="title-num">01.</span> My work</a></li>
+            <li><a href="#about"><span class="title-num">02.</span> About</a></li>
+            <li><a href="#experience"><span class="title-num">03.</span> Experience</a></li>
+            <li><a href="#contact"><span class="title-num">04.</span> Contact</a></li>
         </ul>
         <label for="nav-toggle" class="icon-burger">
             <div class="line1"></div>
@@ -26,7 +27,13 @@
     <div class="body">
 
         <section class="hero">
-            <h1><span class="hello">👋</span> Hi, I’m Josh.</h1>
+            <div class="hero-intro">
+                <p>Hi , my name is</p>
+            </div>
+            <h1>Josh Hughes</h1>
+            <div class="hero-subheading">
+                <p class="highlight">Data designer</p>
+            </div>
             <div class="hero-text">
                 <p>I create dashboards, reports and engaging data visualisations using clean, modern design principles.</p>
             </div>
@@ -35,7 +42,7 @@
             </div>
         </section>
 
-        <section class="recent-work">
+        <section class="recent-work" id="work">
             <div class="work-heading">
                 <div class="section-title">
                     <h2><span class="title-num">01.</span> Recent work</h2>
@@ -108,49 +115,103 @@
             </div>
         </section>
 
-        <section class="tools">
+        <section class="about-me" id="about">
             <div class="section-heading">
                 <div class="section-title">
-                    <h2><span class="title-num">02.</span> I love building things with</h2>
+                    <h2><span class="title-num">02.</span> About me</h2>
                 </div>
             </div>
-            <div class="tools-grid">
-                <div class="tool-icon">
-                    <div class="icon-image">
-                        <img src="img/tableau icon.png" alt="Tableau icon">
-                    </div>
-                    <div class="icon-label">
-                        <p>Tableau</p>
-                    </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hello! I’m Josh, a BI developer, designer and freelancer based in Southampton, UK.</p>
+                    <p>I love making cool things with data. From interactive business dashboards, to fun engaging infographics, and everything in-between.</p>
+                    <p>I currently work for the NHS, as part of the BI development team at University Hospital Southampton where I get to work on a range of interesting and meaningful projects.</p>
                 </div>
-                <div class="tool-icon">
-                    <div class="icon-image">
-                        <img src="img/power bi icon.png" alt="Power BI icon">
+                <div class="icons-container">
+                    <div class="tools">
+                        <div class="tools-heading">
+                            <p>I love making things with:</p>
+                        </div>
+                        <div class="icons-grid">
+                            <div class="tool-icon">
+                                <div class="icon-image">
+                                    <img src="img/tableau icon.png" alt="Tableau icon">
+                                </div>
+                                <div class="icon-label">
+                                    <p>Tableau</p>
+                                </div>
+                            </div>
+                            <div class="tool-icon">
+                                <div class="icon-image">
+                                    <img src="img/power bi icon.png" alt="Power BI icon">
+                                </div>
+                                <div class="icon-label">
+                                    <p>Power BI</p>
+                                </div>
+                            </div>
+                            <div class="tool-icon">
+                                <div class="icon-image">
+                                    <img src="img/figma icon.png" alt="Figma icon">
+                                </div>
+                                <div class="icon-label">
+                                    <p>Figma</p>
+                                </div>
+                            </div>
+                            <div class="tool-icon">
+                                <div class="icon-image">
+                                    <img src="img/html icon.png" alt="HTML icon">
+                                </div>
+                                <div class="icon-label">
+                                    <p>HTML/CSS</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="icon-label">
-                        <p>Power BI</p>
-                    </div>
+                    <div class="find-me">
+                        <div class="find-me-heading">
+                            <p>Fine me on:</p>
+                        </div>
+                        <div class="icons-grid">
+                            <div class="tool-icon">
+                                <div class="icon-image">
+                                    <img src="img/twitter.png" alt="Twitter icon">
+                                </div>
+                                <div class="icon-label">
+                                    <p>Twitter</p>
+                                </div>
+                            </div>
+                            <div class="tool-icon">
+                                <div class="icon-image">
+                                    <img src="img/linkedin.png" alt="LinkedIn icon">
+                                </div>
+                                <div class="icon-label">
+                                    <p>LinkedIn</p>
+                                </div>
+                            </div>
+                            <div class="tool-icon">
+                                <div class="icon-image">
+                                    <img src="img/upwork icon.png" alt="Upwork icon">
+                                </div>
+                                <div class="icon-label">
+                                    <p>Upwork</p>
+                                </div>
+                            </div>
+                            <div class="tool-icon">
+                                <div class="icon-image">
+                                    <img src="img/tableau icon.png" alt="Tableau public icon">
+                                </div>
+                                <div class="icon-label">
+                                    <p>Tableau Public</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
-                <div class="tool-icon">
-                    <div class="icon-image">
-                        <img src="img/figma icon.png" alt="Figma icon">
-                    </div>
-                    <div class="icon-label">
-                        <p>Figma</p>
-                    </div>
-                </div>
-                <div class="tool-icon">
-                    <div class="icon-image">
-                        <img src="img/html icon.png" alt="HTML icon">
-                    </div>
-                    <div class="icon-label">
-                        <p>HTML/CSS</p>
-                    </div>
-                </div>
+                    
             </div>
         </section>
 
-        <section class="experience">
+        <section class="experience" id="experience">
             <div class="experience-heading">
                 <div class="section-title">
                     <h2><span class="title-num">03.</span> My experience</h2>
@@ -161,7 +222,7 @@
                     <p>Specialist BI Developer</p>
                 </div>
                 <div class="job-desc">
-                    <p>Managing a team of 5 BI developers, I design and develop Power BI dashboards for a range of operational and clinical stakeholders that unlock insights to improve patient care.</p>
+                    <p>Managing a team of BI developers, I design and develop Power BI dashboards for a range of operational and clinical stakeholders that unlock insights to improve patient care.</p>
                 </div>
                 <div class="time">
                     <p>May 2020 - Present</p>
@@ -199,21 +260,14 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-header">
                 <div class="section-title">
                     <h2><span class="title-num">04.</span> Get in touch</h2>
                 </div>
-                <div class="social-icons">
-                    <div class="social-icon twitter">
-                        <img src="img/twitter.png" alt="Twitter icon">
-                    </div>
-                    <div class="social-icon linkedin">
-                        <img src="img/linkedin.png" alt="LinkedIn icon">
-                    </div>
-                </div>
             </div>
-            <p>I’m always open to new freelancing opportunities and collaborating on new projects - just give me a shout.</p>
+            <p>I’m currently open to new freelancing opportunities and collaborating on new projects.</p>
+            <p>Feel free to give me a shout on social media, or via email using the link below.</p>
             <div class="button hello">
                 <a href="#">Say hello</a>
             </div>
