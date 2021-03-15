@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,20 +8,25 @@
     font-family: 'Poppins';
 }
 
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins';
-    color: #ffffff;
+    color: #EFF2F9;
     background-color: #262F42;
 }
 
 a {
-    color: #fff;
-    font-size: 0.8em;
+    color: #EFF2F9;
+    font-size: 0.8rem;
     text-decoration: none;
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     line-height: 1.8em;
     font-weight: 300;
 }
@@ -28,12 +34,12 @@ p {
 h1 {
     font-style: normal;
     font-weight: 600;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h2 {
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 nav {
@@ -61,9 +67,9 @@ section {
 .logo {
     z-index: 10;
     cursor: pointer;
-    color: #ffffff;
+    color: #EFF2F9;
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: 900;
 }
 
@@ -74,7 +80,7 @@ section {
 .icon-burger .line1 {
 	width: 30px;
 	height: 4px;
-	background-color: #fff;
+	background-color: #EFF2F9;
 	margin: 5px;
 	border-radius: 5px;
 	transition: all .3s ease-in-out;
@@ -83,7 +89,7 @@ section {
 .icon-burger .line2 {
 	width: 20px;
 	height: 4px;
-	background-color: #fff;
+	background-color: #EFF2F9;
 	margin: 5px;
 	border-radius: 5px;
     float: right;
@@ -103,7 +109,7 @@ section {
 	right: 0;
 	top: 0px;
 	bottom: 100%;
-	background-color: #3257a7;
+	background-color: #21293A;
 	overflow: hidden;
 	transition: all .5s ease-in-out;
 }
@@ -115,19 +121,20 @@ section {
 .links a {
 	display: block;
 	padding: 1em;
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: bold;
-	color: #fff;
+	color: #EFF2F9;
 	text-decoration: none;
 }
 
 nav :checked ~ .links {
 	bottom: 0;
 }
+
 nav :checked ~ .icon-burger .line1 {
 	transform: translateY(10px) rotate(225deg);
-	
 }
+
 nav :checked ~ .icon-burger .line2 {
 	transform: translateY(-10px) rotate(-225deg);
 	width:30px;
@@ -135,23 +142,53 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .hero{
-    height: 80vh;
+    height: 90vh;
     display: flex;
 	flex-direction: column;
 	justify-content: center;
-    padding-bottom: 0px;
+    padding-bottom: 10vh;
 }
 
-.hello{
-    padding-right: 0.2em;
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero-intro p {
+    font-size: 0.7rem;
+    font-family: 'Rock Salt';
+    letter-spacing: 0.4em;
+    color: #00EAEE;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .hero-text {
-    padding: 1rem 0 0.5rem 0;
+    padding: 0.5em 0 1.5em 0;
 }
 
 .hero-text p {
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    color: #C4CAD9;
+}
+
+.hero-subheading {
+    padding: 3em 0 0.25em 0;
+}
+
+.highlight {
+    display: inline-block;
+    background-image: linear-gradient(to right, transparent 50%, #1E5464 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    width: 138px;
+}
+
+.hero-subheading p {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: #EFF2F9;
+    padding-left: 1em;
 }
 
 .hero-links{
@@ -159,14 +196,18 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .hero-links p {
-    font-size: 0.8em;
-    color: #DBDBDB;
+    font-size: 0.8rem;
+    color: #8892B0;
 }
 
 .hero-links a {
     text-decoration: none;
-	font-size: 1em;
+	font-size: 0.8rem;
     color: #00EAEE;
+}
+
+.recent-work {
+    padding-top: 0px;
 }
 
 .work-heading {
@@ -182,15 +223,16 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .button {
-    font-size: 0.9em;
+    font-size: 0.8rem;
     border: 1px solid #00EAEE;
     border-radius: 4px;
-    padding: 2px 10px 2px 10px;
+    padding: 3px 14px 3px 14px;
 }
 
 .button a {
     text-decoration: none;
-    color: #ffffff;
+    color: #EFF2F9;
+    font-size: 0.7rem;
 }
 
 .cards-grid {
@@ -211,18 +253,18 @@ nav :checked ~ .icon-burger .line2 {
 
 .card-header {
     border-radius: 15px 15px 0 0;
-    padding: 20px 0 0 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .card-subheading p {
-    font-size: 0.9em;
+    font-size: 0.7rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     font-weight: 400;
 }
 
 .card-title p {
-    font-size: 1.3em;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -246,32 +288,62 @@ nav :checked ~ .icon-burger .line2 {
     padding-bottom: 20px;
 }
 
-.tools-grid {
-    display: flex;
-    justify-content: space-between;
-	align-items: center;
-    grid-gap: 30px;
-}
-
 .tool-icon {
     padding-top: 10px;
 }
 
 .icon-image {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .icon-image img {
-    width: 60%;
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.tools p {
-    font-size: 0.8em;
+.about-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text p {
+    padding-bottom: 1em;
+}
+
+.icons-container {
+    padding-top: 2em;
+}
+
+.icons-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 30px;
     text-align: center;
-    font-weight: 400;
+    color: #C4CAD9;
+    padding-top: 10px;
+}
+
+.tools-heading p {
+    font-weight: 500;
+}
+
+.find-me {
+    padding-top: 2.5em;
+}
+
+.find-me-heading p {
+    font-weight: 500;
+}
+
+.icon-label {
+    padding-top: 0.4em;
+}
+
+.icon-label p {
+    font-size: 0.6rem;
 }
 
 .experience-heading {
@@ -282,7 +354,6 @@ nav :checked ~ .icon-burger .line2 {
     margin-left: 1em;
     padding: 1em 2em 2em;
 	position: relative;
-	color: rgba(black, .7);
 	border-left: 1px solid #6E7480;
 }
 
@@ -290,9 +361,9 @@ nav :checked ~ .icon-burger .line2 {
     content: attr(employer);
     position: absolute;
     left: 2.8em;
-    top: 0em;
+    top: -0.3em;
     display: block;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     color: #00EAEE;
     padding-top: 0.2em;
 }
@@ -311,14 +382,13 @@ nav :checked ~ .icon-burger .line2 {
     color: blue;
 }
 
-
 .employer p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     color: #00EAEE;
 }
 
 .job-title p {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
@@ -327,10 +397,10 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .job-desc p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     line-height: 1.6;
     font-weight: 300;
-    color: #E5E5E5;
+    color: #C4CAD9;
 }
 
 .time {
@@ -338,9 +408,9 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .time p {
-    font-size: 0.6em;
+    font-size: 0.6rem;
     font-style: italic;
-    color: #E5E5E5;
+    color: #A3AEC8;
 }
 
 .last-job {
@@ -348,20 +418,7 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .contact-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-icon {
-    padding-left: 15px;
+    padding-bottom: 15px;
 }
 
 .twitter img {
@@ -380,6 +437,11 @@ nav :checked ~ .icon-burger .line2 {
     margin-right: auto;
 }
 
+.contact p {
+    color: #C4CAD9;
+    padding-bottom: 10px;
+}
+
 .hello{
     display: inline-block;
     margin-top: 25px;
@@ -392,18 +454,159 @@ footer {
 }
 
 .site-links p {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .footer-info {
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .footer-info p {
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 .footer-pipes {
     color: #00EAEE;
     white-space: pre-wrap;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    section {
+        padding-bottom: 250px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .icon-burger {
+        display: none;
+    }
+
+    .links {
+        flex-direction: row;
+        position: static;
+        background-color: #262F42;
+        transition: none;
+    }
+    
+    .links a {
+        display: block;
+        padding: 0 0 0 3.5em;
+        font-size: 0.75rem;
+        font-weight: normal;
+        text-align: right;
+        color: #C4CAD9;
+    }
+
+    .hero-text {
+        max-width: 80%;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        line-height: 28px;
+    }
+
+    .hero-links {
+        padding-top: 10px;
+    }
+
+    .work-heading {
+        padding-bottom: 50px;
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .icon-image img {
+        width: 60%;
+    }
+
+    .about-grid {
+        flex-direction: row;
+    }
+
+    .about-text {
+        padding-right: 2.5em;
+    }
+
+    .icons-container {
+        border-left: 1px solid #404E6C;
+        padding-left: 2.5em;
+        padding-top: 0em;
+    }
+
+    .find-me {
+        padding-top: 2em;
+    }
+
+    footer {
+        padding: 65px 0 65px 0;
+    }
+
+
+    
+
+    
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    
+
+    section { 
+        max-width: 1080px; 
+        margin: 0 auto !important; 
+        float: none !important; 
+    }
+
+    nav { 
+        max-width: 1080px; 
+        margin: 0 auto !important; 
+        float: none !important; 
+    }
+
+    .hero-text {
+        max-width: 66%;
+    }
+    
+    .cards-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .card-title p {
+        font-size: 0.7rem;
+    }
+
+    .card-subheading p {
+        font-size: 0.45rem;
+    }
+
+    .icon-image img {
+        width: 50%;
+    }
+
+    .about-text {
+        padding-right: 9em;
+    }
+
+    .icons-container {
+        padding-left: 3em;
+    }
+
 }
