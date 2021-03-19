@@ -74,7 +74,7 @@ section {
 }
 
 .icon-burger{
-    z-index: 10;
+    z-index: 100;
 }
 
 .icon-burger .line1 {
@@ -101,17 +101,18 @@ section {
 .links {
 	display: flex;
     flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
 	position: fixed;
 	z-index: 9;
-	left: 0;
+	left: 100%;
 	right: 0;
 	top: 0px;
-	bottom: 100%;
+	bottom: 0;
 	background-color: #21293A;
 	overflow: hidden;
 	transition: all .5s ease-in-out;
+    width: 66%;
+    text-align: right;
+    padding-top: 12vh;
 }
 
 .links li {
@@ -121,14 +122,22 @@ section {
 .links a {
 	display: block;
 	padding: 1em;
-	font-size: 2rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	color: #EFF2F9;
 	text-decoration: none;
 }
 
+.links:target {
+    left: 100%;
+}
+
 nav :checked ~ .links {
-	bottom: 0;
+	left: 34%;
+}
+
+nav :checked ~ .blur {
+	left: 34%;
 }
 
 nav :checked ~ .icon-burger .line1 {
@@ -139,6 +148,16 @@ nav :checked ~ .icon-burger .line2 {
 	transform: translateY(-10px) rotate(-225deg);
 	width:30px;
 	margin-top: 10px;
+}
+
+nav :checked ~ .icon-burger {
+    position: fixed;
+    right: 5%
+}
+
+a:focus + .links {
+    left:100%;
+    transition-delay:0;
 }
 
 .hero{
@@ -168,7 +187,7 @@ nav :checked ~ .icon-burger .line2 {
 
 .hero-text p {
     font-size: 0.9rem;
-    color: #C4CAD9;
+    color: #b7c1d8;
 }
 
 .hero-subheading {
@@ -322,7 +341,7 @@ nav :checked ~ .icon-burger .line2 {
     align-items: center;
     grid-gap: 30px;
     text-align: center;
-    color: #C4CAD9;
+    color: #b7c1d8;
     padding-top: 10px;
 }
 
@@ -400,7 +419,7 @@ nav :checked ~ .icon-burger .line2 {
     font-size: 0.7rem;
     line-height: 1.6;
     font-weight: 300;
-    color: #C4CAD9;
+    color: #b7c1d8;
 }
 
 .time {
@@ -438,7 +457,7 @@ nav :checked ~ .icon-burger .line2 {
 }
 
 .contact p {
-    color: #C4CAD9;
+    color: #b7c1d8;
     padding-bottom: 10px;
 }
 
@@ -495,6 +514,13 @@ footer {
         position: static;
         background-color: #262F42;
         transition: none;
+        padding-top: 0;
+        width: auto;
+        left: 0;
+        right: 0;
+        top: 0px;
+        bottom: 100%;
+        overflow: hidden;
     }
     
     .links a {
@@ -503,7 +529,7 @@ footer {
         font-size: 0.75rem;
         font-weight: normal;
         text-align: right;
-        color: #C4CAD9;
+        color: #b7c1d8;
     }
 
     .hero-text {
