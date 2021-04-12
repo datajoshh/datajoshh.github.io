@@ -16,6 +16,7 @@ body {
     font-family: 'Poppins';
     color: #EFF2F9;
     background-color: #262F42;
+    text-align: center;
 }
 
 a {
@@ -173,7 +174,6 @@ nav :checked ~ .burger-layer {
 	flex-direction: column;
 	justify-content: center;
     padding-bottom: 10vh;
-    text-align: center;
 }
 
 .hero h1 {
@@ -245,6 +245,8 @@ nav :checked ~ .burger-layer {
     border: 1px solid #00EAEE;
     border-radius: 4px;
     padding: 3px 14px 3px 14px;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .button a {
@@ -253,10 +255,15 @@ nav :checked ~ .burger-layer {
     font-size: 0.7rem;
 }
 
+.recent-work .button {
+    margin-top: 50px;
+}
+
 .cards-grid {
     display: grid;
     grid-template-columns: auto;
     grid-gap: 30px;
+    text-align: left;
 }
 
 .card {
@@ -302,8 +309,8 @@ nav :checked ~ .burger-layer {
     background-color: #1DA7B1;
 }
 
-.section-heading {
-    padding-bottom: 20px;
+.section-title {
+    padding-bottom: 50px;
 }
 
 .tool-icon {
@@ -328,6 +335,7 @@ nav :checked ~ .burger-layer {
 
 .about-text p {
     padding-bottom: 1em;
+    text-align: left;
 }
 
 .icons-container {
@@ -339,13 +347,13 @@ nav :checked ~ .burger-layer {
     justify-content: space-between;
     align-items: center;
     grid-gap: 30px;
-    text-align: center;
     color: #b7c1d8;
     padding-top: 10px;
 }
 
 .tools-heading p {
     font-weight: 500;
+    text-align: left;
 }
 
 .find-me {
@@ -354,6 +362,7 @@ nav :checked ~ .burger-layer {
 
 .find-me-heading p {
     font-weight: 500;
+    text-align: left;
 }
 
 .icon-label {
@@ -366,6 +375,10 @@ nav :checked ~ .burger-layer {
 
 .experience-heading {
     padding-bottom: 35px;
+}
+
+.timeline {
+    text-align: left;
 }
 
 .job {
@@ -435,10 +448,6 @@ nav :checked ~ .burger-layer {
     border-left: 1px solid #262F42;
 }
 
-.contact-header {
-    padding-bottom: 15px;
-}
-
 .twitter img {
     width: 19.69px;
     height: 16px;
@@ -455,19 +464,17 @@ nav :checked ~ .burger-layer {
     margin-right: auto;
 }
 
+.contact .section-title {
+    padding-bottom: 20px;
+}
+
 .contact p {
     color: #b7c1d8;
     padding-bottom: 10px;
 }
 
-.hello{
-    display: inline-block;
-    margin-top: 25px;
-}
-
 footer {
     background-color: #21293A;
-    text-align: center;
     padding: 35px 0 35px 0;
 }
 
@@ -553,10 +560,6 @@ footer {
         padding-top: 10px;
     }
 
-    .work-heading {
-        padding-bottom: 50px;
-    }
-
     .cards-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -639,15 +642,16 @@ footer {
     }
 
     .about-text {
-        padding-right: 7em;
+        padding: 0 2em 0 4em;
     }
 
     .icons-container {
-        padding-left: 7em;
+        padding: 0 2em 0 4em;
     }
 
     .timeline {
-        padding: 0 7em 0 4em;
+        padding: 0 10em 0 10em;
+        text-align: left;
     }
 
 }
