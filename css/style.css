@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 * {
     box-sizing: border-box;
@@ -121,7 +120,7 @@ section {
 
 .links a {
 	display: block;
-	padding: 1em;
+	padding: 1em 11% 0 0;
 	font-size: 1.2rem;
 	font-weight: bold;
 	color: #EFF2F9;
@@ -130,6 +129,14 @@ section {
 
 .links:target {
     left: 100%;
+}
+
+.burger-layer {
+    width: 40px;
+    height: 44px;
+    background-color: red;
+    z-index: 200;
+    display: block;
 }
 
 nav :checked ~ .links {
@@ -155,9 +162,9 @@ nav :checked ~ .icon-burger {
     right: 5%
 }
 
-a:focus + .links {
-    left:100%;
-    transition-delay:0;
+nav :checked ~ .burger-layer {
+    
+    position: fixed;
 }
 
 .hero{
@@ -166,19 +173,11 @@ a:focus + .links {
 	flex-direction: column;
 	justify-content: center;
     padding-bottom: 10vh;
+    text-align: center;
 }
 
 .hero h1 {
     font-size: 3rem;
-}
-
-.hero-intro p {
-    font-size: 0.7rem;
-    font-family: 'Rock Salt';
-    letter-spacing: 0.4em;
-    color: #00EAEE;
-    padding-left: 0.5em;
-    padding-bottom: 0.5em;
 }
 
 .hero-text {
@@ -191,7 +190,7 @@ a:focus + .links {
 }
 
 .hero-subheading {
-    padding: 3em 0 0.25em 0;
+    padding: 2em 0 0.25em 0;
 }
 
 .highlight {
@@ -207,7 +206,7 @@ a:focus + .links {
     text-transform: uppercase;
     letter-spacing: 0.4em;
     color: #EFF2F9;
-    padding-left: 1em;
+    padding-left: 0.4em;
 }
 
 .hero-links{
@@ -501,7 +500,7 @@ footer {
         padding-bottom: 250px;
     }
 
-    h1 {
+    .hero h1 {
         font-size: 3.5rem;
     }
 
@@ -532,8 +531,17 @@ footer {
         color: #b7c1d8;
     }
 
+    .hero-subheading p {
+        font-size: 0.7rem;
+    }
+
+    .highlight {
+        width: 160px;
+    }
+
     .hero-text {
         max-width: 80%;
+        margin-left: 10%;
     }
 
     .hero-text p {
@@ -591,8 +599,6 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    
-
     section { 
         max-width: 1080px; 
         margin: 0 auto !important; 
@@ -605,8 +611,13 @@ footer {
         float: none !important; 
     }
 
+    .hero{
+        height: 95vh;
+    }
+
     .hero-text {
         max-width: 66%;
+        margin-left: 17%;
     }
     
     .cards-grid {
@@ -616,11 +627,11 @@ footer {
     }
 
     .card-title p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .card-subheading p {
-        font-size: 0.45rem;
+        font-size: 0.55rem;
     }
 
     .icon-image img {
@@ -628,11 +639,15 @@ footer {
     }
 
     .about-text {
-        padding-right: 9em;
+        padding-right: 7em;
     }
 
     .icons-container {
-        padding-left: 3em;
+        padding-left: 7em;
+    }
+
+    .timeline {
+        padding: 0 7em 0 4em;
     }
 
 }

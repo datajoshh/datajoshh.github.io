@@ -12,13 +12,13 @@
     <nav>
         <input id="nav-toggle" type="checkbox">
         <a href="index.html" class="logo">jh<span style="color: #00EAEE">.</span></a>
-        <ul class="links">
+        <ul class="links" id="links">
             <li><a href="#work"><span class="title-num">01.</span> My work</a></li>
             <li><a href="#about"><span class="title-num">02.</span> About</a></li>
             <li><a href="#experience"><span class="title-num">03.</span> Experience</a></li>
             <li><a href="#contact"><span class="title-num">04.</span> Contact</a></li>
         </ul>
-        <label for="nav-toggle" class="icon-burger">
+        <label for="nav-toggle" class="icon-burger" id="icon-burger">
             <div class="line1"></div>
             <div class="line2"></div>
         </label>
@@ -27,9 +27,6 @@
     <div class="body">
 
         <section class="hero">
-            <div class="hero-intro">
-                <p>Hi , my name is</p>
-            </div>
             <h1>Josh Hughes</h1>
             <div class="hero-subheading">
                 <p class="highlight">Data designer</p>
@@ -217,45 +214,47 @@
                     <h2><span class="title-num">03.</span> My experience</h2>
                 </div>
             </div>
-            <div class="job" employer='NHS'>
-                <div class="job-title">
-                    <p>Specialist BI Developer</p>
+            <div class="timeline">
+                <div class="job" employer='NHS'>
+                    <div class="job-title">
+                        <p>Specialist BI Developer</p>
+                    </div>
+                    <div class="job-desc">
+                        <p>Managing a team of BI developers, I design and develop Power BI dashboards for a range of operational and clinical stakeholders that unlock insights to improve patient care.</p>
+                    </div>
+                    <div class="time">
+                        <p>May 2020 - Present</p>
+                    </div>
                 </div>
-                <div class="job-desc">
-                    <p>Managing a team of BI developers, I design and develop Power BI dashboards for a range of operational and clinical stakeholders that unlock insights to improve patient care.</p>
+                <div class="job" employer='NHS'>
+                    <div class="job-title">
+                        <p>Information Team Leader</p>
+                    </div>
+                    <div class="job-desc">
+                        <p>Leading a small team of data analysts, I ensured that internal and external reporting deadlines were met, and took the lead on creation, production and improvement of reports.</p>
+                    </div>
+                    <div class="time">
+                        <p>Dec 2018 - May 2020</p>
+                    </div>
                 </div>
-                <div class="time">
-                    <p>May 2020 - Present</p>
+                <div class="job" employer='NHS'>
+                    <div class="job-title">
+                        <p>Information Analyst</p>
+                    </div>
+                    <div class="job-desc">
+                        <p>Created, improved and automated production of performance reports with Excel and VBA, using freehand SQL to write custom queries for use in my analysis.</p>
+                    </div>
+                    <div class="time">
+                        <p>Feb 2017 - Dec 2018</p>
+                    </div>
                 </div>
-            </div>
-            <div class="job" employer='NHS'>
-                <div class="job-title">
-                    <p>Information Team Leader</p>
-                </div>
-                <div class="job-desc">
-                    <p>Leading a small team of data analysts, I ensured that internal and external reporting deadlines were met, and took the lead on creation, production and improvement of reports.</p>
-                </div>
-                <div class="time">
-                    <p>Dec 2018 - May 2020</p>
-                </div>
-            </div>
-            <div class="job" employer='NHS'>
-                <div class="job-title">
-                    <p>Information Analyst</p>
-                </div>
-                <div class="job-desc">
-                    <p>Created, improved and automated production of performance reports with Excel and VBA, using freehand SQL to write custom queries for use in my analysis.</p>
-                </div>
-                <div class="time">
-                    <p>Feb 2017 - Dec 2018</p>
-                </div>
-            </div>
-            <div class="job last-job" employer='Smart Labs'>
-                <div class="job-title">
-                    <p>Data Analyst & Researcher</p>
-                </div>
-                <div class="time">
-                    <p>Feb 2016 - Feb 2017</p>
+                <div class="job last-job" employer='Smart Labs'>
+                    <div class="job-title">
+                        <p>Data Analyst & Researcher</p>
+                    </div>
+                    <div class="time">
+                        <p>Feb 2016 - Feb 2017</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -267,7 +266,7 @@
                 </div>
             </div>
             <p>I’m currently open to new freelancing opportunities and collaborating on new projects.</p>
-            <p>Feel free to give me a shout on social media, or via email using the link below.</p>
+            <p>Feel free to give me a shout on social media, or email me via the button below.</p>
             <div class="button hello">
                 <a href="#">Say hello</a>
             </div>
@@ -283,6 +282,29 @@
             <p>designed & built by Josh Hughes</p>
         </div>
     </footer>
+
+
+    <script>
+        //define checkbox
+        var checkbox = document.querySelector( '#nav-toggle' );
+
+        //define nav links, so menu will close when click these
+        var navlinks = document.querySelector('#links');
+        
+        //when you click links in the nav menu, the checkbox gets unchecked and menu closes
+        document.body.addEventListener('click', function (event) {
+            if (navlinks.contains(event.target)) {
+                checkbox.checked = false;
+            }
+        });
+        
+        //adds event listener when you click on the burger menu
+        checkbox.addEventListener( 'click', function(){
+        if( this.checked ) {
+            document.addEventListener( 'click', navlinks );
+        } 
+        });
+    </script>
 
 </body>
 </html>
